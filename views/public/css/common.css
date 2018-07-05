@@ -1,0 +1,168 @@
+/*导航栏固定*/
+/*.fixednav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,0.8);
+  background-image: none;
+}*/
+.active {
+  color: #f6c946;
+}
+/*svg*/
+.gho-svg { 
+  display: none;
+}
+/*底部*/
+.user-footer {
+  padding-top: 20px;
+  height: 220px;
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  background-color: #fff;
+}
+.user-footer .user-footer-call {
+  position: relative;
+  height: 60%;
+  font-size: 12px;
+}
+.user-footer .user-footer-call > div {
+  width: 100%;
+}
+.user-footer .media {
+  display: inline-block;
+  padding-right: 10px;
+}
+.user-footer .call{
+  display: inline-block;
+}
+.user-footer .call .emall {
+  width: 23px;
+  height: 23px;
+  fill: #f6c946;
+  margin-bottom: -6px;
+}
+.user-footer .media img {
+  width: 95px;
+  height: 95px;
+}
+.user-footer .call {
+  vertical-align: top;
+}
+.user-footer .call > div {
+  padding-bottom: 13px;
+  text-align: left;
+}
+.user-footer .call div:nth-child(3) {
+  padding-bottom: 0;
+}
+.user-footer .call img {
+  width: 22px;
+  height: 22px;
+  margin-right: 2px;
+}
+/*.user-footer .user-footer-link {
+  height: 25%;
+  line-height: 45px;
+}
+.user-footer .user-footer-link a {
+  color: #555;
+}*/
+.user-footer .user-footer-copyright {
+  padding-top: 10px;
+  height: 40%;
+}
+/*登录后下拉菜单*/
+.hover-menu {
+  width: 150px;
+  padding: 7px 0;
+  position: absolute;
+  top: 42px;
+  right: 10px;
+  background-color: #fff;
+  /*transform: translateX(-10px);*/
+  box-shadow: 0 11px 20px 0 rgba(97, 108, 121, 0.17);
+  display: none;
+}
+.hover-menu > li > a {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 15px;
+  font-size: 14px;
+  display: block;
+  color: #000;
+}
+.hover-menu > li > a:hover {
+  /*color: #fff;*/
+  background-color: #f6c946;
+}
+.hover-menu > li > a.profile {
+  font-size: 12px;
+  color: #969696;
+}
+.hover-menu .separator {
+  margin: 7px 0;
+  border: 1px solid #bbb;
+}
+/*向下滚动*/
+.goto-bottom {
+  width: 50px;
+  height: 50px;
+  bottom: 0;
+  cursor: pointer;
+}
+.goto-bottom > .goto-bottom-svg {
+  width: 100%;
+  height: 100%;
+  fill: #bbb;
+}
+/*滚动到顶部*/
+.goto-top {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  z-index: 10;
+  bottom: 50px;
+  right: 20px;
+  cursor: pointer;
+  display: none;
+}
+.goto-top > .goto-top-svg {
+  width: 100%;
+  height: 100%;
+  fill: #999;
+}
+@media (max-width: 780px) {
+  .hover-menu {
+    right: 4%;
+  }
+}
+@media (max-width: 580px) {
+  .hover-menu {
+    right: 7%;
+  }
+  .user-footer {
+    font-size: 14px;
+  }
+}
+@media (max-width: 430px) {
+  .hover-menu {
+    right: 15px;
+    width: 140px;
+    padding: 3px 0;
+  }
+  .hover-menu .separator {
+    margin: 3px 0;
+  }
+  .hover-menu > li > a {
+    height: 25px;
+    line-height: 25px;
+    padding: 0 10px;
+    font-size: 12px;
+  }
+  .user-footer {
+    font-size: 12px;
+  }
+}

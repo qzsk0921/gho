@@ -1,0 +1,18 @@
+<script type="text/html" id="module">
+  {{each name}}
+  <li>{{$index}}:{{$value}}</li>
+  {{/each}}
+</script>
+  <script type="text/javascript">
+var obj = {
+        name: [
+          'web',
+          'js',
+          'php',
+          'ios',
+          'node'
+        ]
+      }
+      var a = template('module', obj)
+      document.getElementById('content').innerHTML = a
+</script>

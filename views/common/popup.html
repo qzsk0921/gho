@@ -1,0 +1,98 @@
+<div class="popup">
+  <div class="transparent"></div>
+  <!-- 免注册登录 -->
+  <form class="login-popup center-x">
+    <!-- <input type="hidden" name="csrfmiddlewaretoken" value=""> -->
+    <header class="popup-header clearfix">
+      <div class="popup-title fl w80">免 注 册 登 录</div>
+      <div class="popup-actions fr">
+        <a class="popup-close" href="javascript:void(0)">
+          <i>×</i>
+        </a>
+      </div>
+    </header>
+    <div class="popup-content">
+      <div class="form-column-layout" data-action="process-signup">
+        <div class="fields">
+          <div class="form-field username-field username">
+            <label class="form-label" for="username">手 机 号</label>
+            <div class="form-content">
+              <input id="mobileid-noreg" class="phone-input w100" type="text" name="username" value="" autofocus="" placeholder="">
+            </div>
+          </div>
+          <div class="form-field password">
+            <label class="form-label" for="password">验 证 码</label>
+            <div class="form-content clearfix">
+              <input id="verification" class="verification-input fl w60" type="text" name="verification" value="">
+              <button type=button class="form-button verification fr w35">
+                <span class="second state-normal">获 取 验 证 码</span>
+              </button>
+            </div>
+          </div>
+          <hr class="form-separator">
+          <div class="form-field form-buttons signup-field">
+            <div class="form-content clearfix">
+              <button type=button class="form-button cancel fl w45">
+                <span class="state-normal">取 消</span>
+              </button>
+              <button type=button id="login-noreg" class="form-button fr w45">
+                <span class="state-normal">登 录</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="popup-footer">
+      <div class="bridge">
+          已有账号? <a class="switch-pwd" href="javascript:void(0)" data-action="open-login">切换到账号登录</a>
+      </div>
+    </footer>
+  </form>
+  <!-- 密码登录 -->
+  <form class="loginpwd-popup center-x" method="post">
+    <!-- <input type="hidden" name="csrfmiddlewaretoken" value=""> -->
+    <header class="popup-header clearfix">
+      <div class="popup-title fl w80">账 号 登 录</div>
+      <div class="popup-actions fr">
+        <a class="popup-close" href="javascript:void(0)">
+          <i>×</i>
+        </a>
+      </div>
+    </header>
+    <div class="popup-content">
+      <div class="form-column-layout" data-action="process-signup">
+        <div class="fields">
+          <div class="form-field username-field username">
+            <label class="form-label" for="username">手 机 号</label>
+            <div class="form-content">
+              <input id="mobileid-reg" class="phone-input w100" type="text" name="username" value="" required="" data-error-for="username" autofocus="" pattern="^[a-zA-Z0-9._-]+$" title="Letters, numbers, -, _ and . only">
+            </div>
+          </div>
+          <div class="form-field password">
+            <label class="form-label" for="password">密 码</label>
+            <div class="form-content">
+              <input id="password" class="password-input w100" type="password" name="password" value="" required="" pattern=".{8,}" title="8 characters minimum">
+            </div>
+          </div>
+          <hr class="form-separator">
+          <div class="form-field form-buttons signup-field">
+            <div class="form-content clearfix">
+              <button type=button class="form-button cancel fl w45">
+                <span class="state-normal">取 消</span>
+              </button>
+              <button type=button id="login-reg" class="form-button fr w45">
+                <span class="state-normal">登 录</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="popup-footer">
+      <div class="bridge">
+          记密码太烦? <a class="switch-nopwd" href="javascript:void(0)">切换到免注册登录</a>
+      </div>
+    </footer>
+  </form>
+</div>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>在线报价单</title>
+  <link rel="stylesheet" href="../public/css/base.css">
+  <link rel="stylesheet" href="../public/css/pdf.css">
+</head>
+<body>
+  <div class="tools">
+    <button id="btn-html2canvas">下载</button>
+  </div>
+  <div id="container">
+    <header>
+      <h1>规划圈在线报价单明细</h1>
+      <p class="today"></p>
+    </header>
+    <section class="wrapper">
+      <div class="content-one">
+        <b class="title">1.所属地块的基本概况</b>
+        <div class="indent">
+          <p id="distance">总面积: <span>0</span>（其中高精度<span>0</span>，低精度<span>0</span>）</p>
+          <p id="totalarea">地块数: <span>0</span>个（其中高精度<span>0</span>个，低精度<span>0</span>个）</p>
+          <p id="totalPrice">总价：<span>0</span>元（其中采集与建模费占<span>0</span>%，其他占<span>0</span>%）</p>
+          <!-- 饼图 -->
+          <div class="canvas-div" style="height: 180px">
+            <canvas id="cas" height="180" width="450">
+              您的浏览器版本过低，请更新浏览器
+            </canvas>
+          </div>
+          <p class="suggest">建议: 由于起步价的原因，本次项目的采集建模费占比仅为<span>0</span>%，性价比不高，建议您增加圈地面积（最小面积建议为<span>0</span>公顷），使采集与建模费占比达到80%以上，而总费用不会增加太多。</p>
+        </div>
+      </div>
+      <div class="content-two">
+        <b class="title">2.周边区域的总体价格表</b>
+        <div class="indent">
+          <p id="address">区域地址: <span>未知省未知市</span></p>
+          <p id="point">经纬度: <span>未知</span></p>
+          <table class="table">
+            <thead>
+              <tr>
+                <th rowspan="2">面 积 （km²）</th>
+                <th colspan="2">
+                  平均价格（万/km²）
+                </th>
+              </tr>
+              <tr>
+                <th>高精度</th>
+                <th>低精度</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="oneD">
+                <td>0 ~ 1</td>
+                <td>00.00</td>
+                <td>00.00</td>
+              </tr>
+              <tr class="twoD">
+                <td>1 ~ 2.5</td>
+                <td>00.00</td>
+                <td>00.00</td>
+              </tr>
+              <tr class="fiveD">
+                <td>2.5 ~ 5</td>
+                <td>00.00</td>
+                <td>00.00</td>
+              </tr>
+              <tr class="tenD">
+                <td>5 ~ 10</td>
+                <td>00.00</td>
+                <td>00.00</td>
+              </tr>
+              <tr class="tenMore">
+                <td>10以上</td>
+                <td>00.00</td>
+                <td>00.00</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td class="tfoot" colspan="3">本区域的最低报价为<span>0</span>万元，对应的经济面积为<span>0</span></td>
+              </tr>
+            </tfoot>
+          </table>
+          <p>
+            (注: 1.以上总体价格表为规划圈根据位置的远近程度自动计算，不同区域价格会有所不同;2.上述报价为一定面积区域的平均价格，实际以网站在线圈地的实时报价为准;3.网站在线圈地报价为包含了数据采集、三维建模、差旅和人工等所有费用的整体报价。)
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p class="company">衢州云圈科技有限公司</p>
+      <p>咨询热线: 0570-8513011 QQ449309258</p>
+    </footer>
+  </div>
+</body>
+</html>
+<script src="../public/assets/jquery-3.3.1.min.js"></script>
+<script src="../public/assets/jspdf.debug.js"></script>
+<script src="../public/assets//html2canvas.js"></script>
+<script src="../public/js/rem.js"></script>
+<script src="../public/js/pdf.js"></script>

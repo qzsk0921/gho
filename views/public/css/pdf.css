@@ -1,0 +1,94 @@
+body {
+  /*width: 100%;*/
+  background-color: #fff;
+  text-align: center;
+  font-size: 19px;
+  overflow: visible;
+  /*line-height: 22px;*/
+}
+.tools{
+    position: fixed;
+    right: 1.0rem;
+    bottom: 30px;
+    text-align: center;
+}
+
+.tools button{
+    padding: 8px;
+    border: 1px #aaa solid;
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.tools button:hover{
+    background-color: #f6c946;
+}
+
+.tools button:active{
+    background-color: #FF8800;
+}
+#container {
+  /*width: 595.28px;*/
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: inherit;
+}
+header {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+header h1 {
+  font-size: 28px;
+  margin: 0 auto;
+}
+header p {
+  padding-top: 5px;
+}
+.wrapper {
+  text-align: left;
+  padding: 0 60px;
+}
+.wrapper .canvas-div {
+  text-align: center;
+}
+.wrapper .content-one {
+  padding-bottom: 20px;
+}
+.wrapper .indent {
+  padding-top: 5px;
+  padding-left: 20px;
+}
+.wrapper .content-one .suggest {
+  color: #052ef5;
+}
+.wrapper .content-two {
+  padding-bottom: 10px;
+}
+.wrapper .content-two .table {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  width: 100%;
+  border-collapse:collapse;
+}
+.wrapper .content-two .table th,
+.wrapper .content-two .table td{
+  border: 1px solid #bbb;
+  height: 30px;
+}
+.wrapper .content-two .table thead{
+  background-color: #f6c946;
+}
+.wrapper .content-two .table tbody {
+  background-color: #f5e6bd;
+}
+footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #aaa;
+}
+footer .company {
+  padding-bottom: 5px;
+}

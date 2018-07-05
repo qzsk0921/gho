@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>个人中心</title>
+  <link rel="stylesheet" type="text/css" href="../public/css/bundle-user.css">
+  <!-- <link rel="stylesheet" type="text/css" href="../public/css/index.css"> -->
+  <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_640335_037uh90i952ymn29.css">
+<!--   <link rel="stylesheet" href="../public/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../public/css/base.css">
+  <link rel="stylesheet" href="../public/css/admin.css">
+  <link rel="stylesheet" href="../public/css/popup.css">
+  <link rel="stylesheet" href="../public/css/common.css">
+  <link rel="stylesheet" href="../public/css/animate.css"> -->
+  <link rel="icon" href="../public/images/icon/09.png">
+</head>
+<body>
+  <div class="gho-svg">
+    <?php include('../public/images/svg/gho.svg'); ?>
+  </div>
+  <!-- <header class="user-header">
+    <ul class="nav clearfix">
+      <li class="logo-box">
+        <a href="http://www.guihuao.com" class="logo">
+          <span class="w-c-xy">规划圈</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">3D案例</a>
+      </li>
+      <li>
+        <a href="#">OSketch</a>
+      </li>
+      <li class="phone">
+        <a href="#">
+          <img src="../public/images/icons/01.png">
+          QQ
+        </a>
+        <a href="#">
+          <img src="../public/images/icons/03.png">
+        </a>
+        <span>0570 8751022</span>
+      </li>
+      <li class="login fl">
+        <img class="loginBtn" src="../public/images/icons/05.png">
+      </li>
+    </ul>
+    <ul class="hover-menu">
+      <li>
+        <a class="profile" href="/">个人中心</a>
+      </li>
+      <li class="separator"></li>
+      <li>
+        <a class="logout" href="/">退出</a>
+      </li>
+    </ul>
+  </header> -->
+  <?php include('../common/nav.html'); ?>
+  <div style="height:40px;width:100%;background-color:#000;position:absolute;top:0;left:0;"></div>
+  <!-- 用户信息 -->
+  <section class="user-info">
+    <div class="info-box clearfix">
+      <div class="avatar fl">
+        <img src="../public/images/avatar.jpeg">
+      </div>
+      <ul class="fl">
+        <li class="username"></li>
+        <li class="address">
+          <span></span>
+          <div class="info-set"></div>
+          <!-- <img class="user-info-set" src="../public/images/02.png"> -->
+        </li>
+        <li>
+          <span>模型 0</span>
+          <span>总浏览量 0</span>
+          <span>积分 0</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="user-module">
+    <div class="module-box">
+      <div class="module-yun">
+        <h3>我的3D云</h3>
+        <div class="module-yun-b">
+          <div class="sort-box center-y">
+            <span>排序：</span>
+            <div class="svg-wrapper">
+              <svg class="address">
+                <use xlink:href="#address"></use>
+              </svg>
+              <svg class="look">
+                <use xlink:href="#look"></use>
+              </svg>
+              <svg class="time">
+                <use xlink:href="#time"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="module-search center-xy">
+            <input type="text" placeholder="搜索">
+            <svg class="search">
+              <use xlink:href="#search"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="before-send">
+        <div class="loading-blue center-xy"></div>
+      </div> -->
+      <div class="modules clearfix">
+        <!-- 请求发送前,成功响应开始加载 -->
+        <div class="before-send">
+          <div class="loading-blue center-xy"></div>
+        </div>
+        <div class="module-item fl">
+          <div class="item">
+            <div class="item-top">
+              <img src="../public/images/04.jpeg">
+            </div>
+            <div class="item-bottom">
+              <div class="item-info one-txt-cut">
+                <a class="avatar-box w10" href="#">
+                  <div class="user-avatar"></div>
+                </a>
+                <b class="w30 one-txt-cut">好客王家村王家</b>
+                <div class="item-info-tip w40 clearfix">
+                  <div class="address-look fr">
+                    <svg class="address">
+                      <use xlink:href="#address"></use>
+                    </svg>
+                    <span class="tip-address one-txt-cut w66">浙江·杭州</span>
+                    <svg class="look">
+                      <use xlink:href="#look"></use>
+                    </svg>
+                    <span class="tip-look one-txt-cut w15">22</span>
+                  </div>
+                </div>
+                <span class="times-ago one-txt-cut w15">一周前</span>
+              </div>
+              <div class="set"></div>
+              <div class="set-box">
+                <ul class="set-list">
+                  <li>编 辑</li>
+                  <li>上 报</li>
+                  <li>易 主</li>
+                  <li>下 载</li>
+                  <li>删 除</li>
+                </ul>
+                <span class="arrow"></span>
+              </div>
+            </div>
+            <div class="user-summary">
+              <a class="summary-left" href="#">
+                <div class="summary-left-avatar"></div>
+              </a>
+              <div class="summary-right">
+                <p class="one-txt-cut">admin</p>
+                <p class="one-txt-cut">衢州云圈科技股份有限公司</p>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div>
+      <div class="btn-load">加载更多</div>
+    </div>      
+  </section>
+  <!-- <footer class="user-footer">
+    <div class="user-footer-call">
+      <div class="center-xy">
+        <div class="media">
+          <img src="../public/images/erweima.png">
+        </div>
+        <div class="call">
+          <div>
+            <svg class="emall">
+              <use xlink:href="#emall"></use>
+            </svg>
+            <span>449309258@qq.com</span>
+          </div>
+          <div>
+            <img src="../public/images/icons/01.png">
+            <span>449309258</span>
+          </div>
+          <div>
+            <img src="../public/images/icons/03.png">
+            <span>0570-85130111</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="user-footer-link">
+      <a href="#">
+        关于本站
+      </a>
+      <span>常见问题</span>
+      <span>意见反馈</span>
+    </div>
+    <div class="user-footer-copyright">
+      Copyright©2018 云圈科技&nbsp;&nbsp;浙ICP备17027034号-1
+    </div>
+  </footer> -->
+  <?php include('../common/footer.html'); ?>
+
+
+  <!-- 弹出框部分开始 -->
+  <div class="popup">
+    <div class="transparent"></div>
+    <!-- 免注册登录 -->
+    <form class="login-popup center-x animated fadeIn">
+      <!-- <input type="hidden" name="csrfmiddlewaretoken" value=""> -->
+      <header class="popup-header clearfix">
+        <div class="popup-title fl w80">免 注 册 登 录</div>
+        <div class="popup-actions fr">
+          <a class="popup-close" href="javascript:void(0)">
+            <i>×</i>
+          </a>
+        </div>
+      </header>
+      <div class="popup-content">
+        <div class="form-column-layout" data-action="process-signup">
+          <div class="fields">
+            <div class="form-field username-field username">
+              <label class="form-label" for="username">手 机 号</label>
+              <div class="form-content">
+                <input id="mobileid-noreg" class="phone-input w100" type="text" name="username" value="" autofocus="" placeholder="">
+              </div>
+            </div>
+            <div class="form-field password">
+              <label class="form-label" for="password">验 证 码</label>
+              <div class="form-content clearfix">
+                <input id="verification" class="verification-input fl w60" type="text" name="verification" value="">
+                <button type=button class="form-button verification fr w35">
+                  <span class="second state-normal">获 取 验 证 码</span>
+                </button>
+              </div>
+            </div>
+            <hr class="form-separator">
+            <div class="form-field form-buttons signup-field">
+              <div class="form-content clearfix">
+                <button type=button class="form-button cancel fl w45">
+                  <span class="state-normal">取 消</span>
+                </button>
+                <button type=button id="login-noreg" class="form-button fr w45">
+                  <span class="state-normal">登 录</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="popup-footer">
+        <div class="bridge">
+            已有账号? <a class="switch-pwd" href="javascript:void(0)" data-action="open-login">切换到账号登录</a>
+        </div>
+      </footer>
+    </form>
+    <!-- 密码登录 -->
+    <form class="loginpwd-popup center-x animated fadeIn" method="post">
+      <!-- <input type="hidden" name="csrfmiddlewaretoken" value=""> -->
+      <header class="popup-header clearfix">
+        <div class="popup-title fl w80">账 号 登 录</div>
+        <div class="popup-actions fr">
+          <a class="popup-close" href="javascript:void(0)">
+            <i>×</i>
+          </a>
+        </div>
+      </header>
+      <div class="popup-content">
+        <div class="form-column-layout" data-action="process-signup">
+          <div class="fields">
+            <div class="form-field username-field username">
+              <label class="form-label" for="username">手 机 号</label>
+              <div class="form-content">
+                <input id="mobileid-reg" class="phone-input w100" type="text" name="username" value="" required="" data-error-for="username" autofocus="" pattern="^[a-zA-Z0-9._-]+$" title="Letters, numbers, -, _ and . only">
+              </div>
+            </div>
+            <div class="form-field password">
+              <label class="form-label" for="password">密 码</label>
+              <div class="form-content">
+                <input id="password" class="password-input w100" type="password" name="password" value="" required="" pattern=".{8,}" title="8 characters minimum">
+              </div>
+            </div>
+            <hr class="form-separator">
+            <div class="form-field form-buttons signup-field">
+              <div class="form-content clearfix">
+                <button type=button class="form-button cancel fl w45">
+                  <span class="state-normal">取 消</span>
+                </button>
+                <button type=button id="login-reg" class="form-button fr w45">
+                  <span class="state-normal">登 录</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="popup-footer">
+        <div class="bridge">
+            记密码太烦? <a class="switch-nopwd" href="javascript:void(0)">切换到免注册登录</a>
+        </div>
+      </footer>
+    </form>
+    <!-- 用户信息设置  -->
+    <form class="info-set-popup center-x" method="post">
+      <!-- <input type="hidden" name="csrfmiddlewaretoken" value=""> -->
+      <header class="popup-header clearfix">
+        <div class="popup-title fl w80">用 户 信 息 设 置</div>
+        <div class="popup-actions fr">
+          <a class="popup-close" href="javascript:void(0)">
+            <i>×</i>
+          </a>
+        </div>
+      </header>
+      <div class="popup-content">
+        <div class="form-column-layout" data-action="process-signup">
+          <div class="fields clearfix">
+            <div class="form-field username-field username fl w50">
+              <label class="form-label" for="username">姓 名 *</label>
+              <div class="form-content">
+                <!-- pattern="^[a-zA-Z0-9._-]+$" title="Letters, numbers, -, _ and . only" -->
+                <input id="username" class="phone-input w100" type="text" name="username" value="" required="" data-error-for="username" autofocus="">
+              </div>
+            </div>
+            <div class="form-field fl w50">
+              <label class="form-label" for="mail">E-Mail</label>
+              <div class="form-content">
+                <!-- pattern=".{8,}" title="8 characters minimum" -->
+                <input id="mail" class="mail-input" type="text" name="mail" value="" placeholder="选填">
+              </div>
+            </div>
+            <div class="form-field fl w50">
+              <label class="form-label" for="company">单 位 *</label>
+              <div class="form-content">
+                <input id="company" class="company-input" type="text" name="company" value="" required="">
+              </div>
+            </div>
+            <div class="form-field fl w50">
+              <label class="form-label" for="address">邮 寄 地 址</label>
+              <div class="form-content">
+                <input id="address" class="address-input" type="text" name="address" value="" placeholder="选填">
+              </div>
+            </div>
+            <hr class="form-separator">
+            <div class="form-field old-pwd">
+              <label class="form-label text" for="one-psd">设 置 登 录 密 码 *</label>
+              <div class="form-content">
+                <input id="one-psd" class="phone-input w100" type="password" name="" value="" data-error-for="" autofocus="" pattern="^[a-zA-Z0-9._-]+$" title="Letters, numbers, -, _ and . only" placeholder="输入新密码">
+              </div>
+            </div>
+            <div class="form-field new-pwd">
+              <!-- <label class="form-label" for="">姓 名 *</label> -->
+              <div class="form-content">
+                <input id="two-psd" class="phone-input w100" type="password" name="" value="" data-error-for="" autofocus="" pattern="^[a-zA-Z0-9._-]+$" title="Letters, numbers, -, _ and . only" placeholder="再输入一遍新密码">
+              </div>
+            </div>
+            <hr class="form-separator">
+            <div class="form-field form-buttons signup-field">
+              <div class="form-content clearfix">
+                <button type=button class="form-button cancel fl w45">
+                  <span class="state-normal">取 消</span>
+                </button>
+                <button type=submit class="form-button keep fr w45">
+                  <span class="state-normal">保 存</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="popup-footer">   
+        <div class="bridge"></div>
+      </footer>
+    </form>
+    <!-- 更换头像 -->
+    <div class="avatar-popup center-x">
+      <header class="popup-header clearfix">
+        <div class="popup-title w80 fl">
+            设置头像
+        </div>
+        <div class="popup-actions fr">
+          <a class="popup-close" href="javascript:void(0)">
+            <i class="fa fa-times">×</i>
+          </a>
+        </div>
+      </header>
+      <div class="popup-content">
+        <h2>添加您的头像</h2>
+        <p class="subtitle">使用照片，插图或徽标</p>
+        <div class="avatar-container">
+          <img src="../public/images/avatar.jpeg">
+        </div>
+        <div class="actions">
+          <a class="button btn-medium btn-primary">选择图片<input id="avatar_upload" type="file" multiple></a>
+        </div>
+        <p class="info">推荐格式：JPEG，512x512，最大2MB</p>
+      </div>
+      <footer class="popup-footer">   
+        <button type=button class="form-button keep center-y fr w15">
+          <span class="state-normal">保 存</span>
+        </button>
+      </footer>
+    </div>
+    <!-- 模块编辑弹出部分开始 -->
+    <div class="module-edit-popup center-x">
+      <div class="inner">
+        <div class="settings-header">
+          <h3 class="settings-name">模型信息编辑</h3>
+        </div>
+        <form id="module-edit-form" method="post">
+          <input type="hidden" name="Guid" value="" class="GuidHidden">
+          <input type="hidden" name="keywords" value="" class="keywordsHidden">
+          <div class="form-field">
+            <label class="form-label" for="displayName">场 景</label>
+            <div class="form-content">
+              <input id="displayName" class="form-input displayName" name="title" placeholder="好客王家村" value="" data-error-for="displayName">
+              <div class="form-notice">
+                  <div class="form-error" data-error-for="displayName"></div>
+                  这是人们访问您的公开信息时会看到的名称
+              </div>
+            </div>
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="skills">标 签</label>
+            <div class="form-content">
+              <label class="form-listbox list-static skills" for="skills">
+                <div class="item-box">
+                  <span class="item skill-item">风光</span>
+                  <input type="checkbox" name="keywords" class="" value="风光">
+                </div>
+                <div class="item-box">
+                  <span class="item skill-item">旅游</span>
+                  <input type="checkbox" name="keywords" class="" value="旅游">
+                </div>
+                <div class="item-box">
+                  <span class="item skill-item">规划</span>
+                  <input type="checkbox" name="keywords" class="" value="规划">
+                </div>
+                <div class="item-box">
+                  <span class="item skill-item">地质</span>
+                  <input type="checkbox" name="keywords" class="" value="地质">
+                </div>
+                <div class="item-box">
+                  <span class="item skill-item">3D建模</span>
+                  <input type="checkbox" name="keywords" class="" value="3D建模">
+                </div>
+                <div class="item-box">
+                  <span class="item skill-item">文物保护</span>
+                  <input type="checkbox" name="keywords" class="" value="文物保护">
+                </div>
+                <div class="item-box">
+                  <span class="item skill-item">实景三维</span>
+                  <input type="checkbox" name="keywords" class="" value="实景三维">
+                </div>
+                <div class="item-box">
+                  <span class="item skill-item">校园</span>
+                  <input type="checkbox" name="keywords" class="" value="校园">
+                </div>
+                 <div class="item-box">
+                  <span class="item skill-item">2018年</span>
+                  <input type="checkbox" name="keywords" class="" value="2018年">
+                </div>
+                <div class="item-box">
+                  <span class="item skill-item">园区</span>
+                  <input type="checkbox" name="keywords" class="" value="园区">
+                </div>
+              </label>
+            </div>
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="description">描 述</label>
+            <div class="form-content">
+              <textarea id="description" name="discript" class="form-input empty" maxlength="256" placeholder="写一点关于模型的描述" data-error-for="description" style="margin:0px;width:100%;height:100px;"></textarea>
+              <div class="form-notice">
+                <div class="form-error" data-error-for="description"></div>
+              </div>
+            </div>
+          </div>
+          <div class="form-field submit">
+            <label class="form-label"></label>
+            <div>
+              <input type="submit" class="button keep edit-keep" value="保 存">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- 模块编辑弹出部分结束 -->
+    <!-- 模块易主弹出框开始 -->
+    <div class="module-change-popup center-x">
+      <!-- <input type="hidden" name="Guid" value=""> -->
+      <header class="popup-header clearfix">
+        <div class="popup-title fl w80">易 主</div>
+        <div class="popup-actions fr">
+          <a class="popup-close" href="javascript:void(0)">
+            <i>×</i>
+          </a>
+        </div>
+      </header>
+      <div class="popup-content">
+        <div class="form-column-layout" data-action="process-signup">
+          <div class="fields">
+            <div class="form-field username-field username">
+              <label class="form-label" for="change-input">账 号</label>
+              <div class="form-content">
+                <input id="change-input" class="phone-input w100" type="text" name="phonenum" value="" autofocus="" pattern="^[a-zA-Z0-9._-]+$" title="Letters, numbers, -, _ and . only">
+              </div>
+            </div>
+            <hr class="form-separator">
+            <div class="form-field form-buttons signup-field">
+              <div class="form-content clearfix">
+                <button type=button id="cha-btn" class="form-button keep fr w45">
+                  <span class="state-normal">确 定</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="popup-footer">
+      </footer>
+    </div>
+    <!-- 模块易主弹出框结束 -->
+    <!-- 模块上报弹出框开始 -->
+    <div class="module-report-popup center-x">
+      <!-- <input type="hidden" name="Guid" value=""> -->
+      <header class="popup-header clearfix">
+        <div class="popup-title fl w80">上 报</div>
+        <div class="popup-actions fr">
+          <a class="popup-close" href="javascript:void(0)">
+            <i>×</i>
+          </a>
+        </div>
+      </header>
+      <div class="popup-content">
+        <div class="form-column-layout" data-action="process-signup">
+          <div class="fields">
+            <div class="form-field username-field username">
+              <label class="form-label" for="report-input">账 号</label>
+              <div class="form-content">
+                <input id="report-input" class="phone-input w100" type="text" name="phonenum" value="" autofocus="" pattern="^[a-zA-Z0-9._-]+$" title="Letters, numbers, -, _ and . only">
+              </div>
+            </div>
+            <hr class="form-separator">
+            <div class="form-field form-buttons signup-field">
+              <div class="form-content clearfix">
+                <button type=button id="rep-btn" class="form-button keep fr w45">
+                  <span class="state-normal">确 定</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="popup-footer">
+      </footer>
+    </div>
+  </div>
+  <!-- 模块上报弹出框结束 -->
+  <input type="hidden" id="Guid-pop">
+  <!-- 弹出框部分结束 -->
+  <a class="goto-top">
+    <svg class="goto-top-svg">
+      <use xlink:href="#goto-top"></use>
+    </svg>
+  </a>
+</body>
+</html>
+<!-- 模板引擎开始 -->
+<!-- 用户信息部分 -->
+<script type="text/template" id="infoTpl">
+  <div class="info-box clearfix">
+    <div id="avatar" class="avatar fl">
+      {{if Touxiang}}
+      <img src="{{Touxiang}}">
+      {{else}}
+      <img src="../public/images/avatar.jpeg">
+      {{/if}}
+    </div>
+    <ul class="fl">
+      <li class="username">{{PhoneNum | blur}}</li>
+      <li class="address">
+        <span>{{Company}}</span>
+        <div class="info-set" data-password="{{Password}}"></div>
+        <!-- <img class="user-info-set" src="../public/images/02.png"> -->
+      </li>
+      <li>
+        <span>模型 {{modelSum}}</span>
+        <span>总浏览量 {{viewSum}}</span>
+        <span>余额</span>
+      </li>
+    </ul>
+  </div>
+</script>
+<!-- 设置信息部分 -->
+<script type="text/template" id="setInfoTpl">
+  <form class="info-set-popup center-x">
+    <!-- <input type="hidden" name="csrfmiddlewaretoken" value=""> -->
+    <header class="popup-header clearfix">
+      <div class="popup-title fl w80">用 户 信 息 设 置</div>
+      <div class="popup-actions fr">
+        <a class="popup-close" href="javascript:void(0)">
+          <i>×</i>
+        </a>
+      </div>
+    </header>
+    <div class="popup-content">
+      <div class="form-column-layout" data-action="process-signup">
+        <div class="fields clearfix">
+          <div class="form-field username-field username fl w50">
+            <label class="form-label" for="username">姓 名 *</label>
+            <div class="form-content">
+              <!-- pattern="^[a-zA-Z0-9._-]+$" title="Letters, numbers, -, _ and . only" -->
+              <input id="username" class="phone-input w100" type="text" name="username" value="{{UserName}}" required="" data-error-for="username" autofocus="">
+            </div>
+          </div>
+          <div class="form-field fl w50">
+            <label class="form-label" for="mail">E-Mail</label>
+            <div class="form-content">
+              <!-- pattern=".{8,}" title="8 characters minimum" -->
+              <input id="mail" class="mail-input" type="text" name="mail" value="{{Email}}" placeholder="选填">
+            </div>
+          </div>
+          <div class="form-field fl w50">
+            <label class="form-label" for="company">单 位 *</label>
+            <div class="form-content">
+              <input id="company" class="company-input" type="text" name="company" value="{{Company}}" required="">
+            </div>
+          </div>
+          <div class="form-field fl w50">
+            <label class="form-label" for="address">邮 寄 地 址</label>
+            <div class="form-content">
+              <input id="address" class="address-input" type="text" name="address" value="{{address}}" placeholder="选填">
+            </div>
+          </div>
+          <hr class="form-separator">
+          <div class="form-field old-pwd">
+            <label class="form-label text" for="one-psd">设 置 登 录 密 码 *</label>
+            <div class="form-content">
+              <!-- pattern="^[a-zA-Z0-9._-]+$" title="Letters, numbers, -, _ and . only" -->
+              <input id="one-psd" class="phone-input w100" type="password" name="" value="" data-error-for="" autofocus="" pattern=".{6,}" title="最少6位" placeholder="输入新密码">
+            </div>
+          </div>
+          <div class="form-field new-pwd">
+            <!-- <label class="form-label" for="">姓 名 *</label> -->
+            <div class="form-content">
+              <input id="two-psd" class="phone-input w100" type="password" name="" value="" data-error-for="" autofocus="" pattern=".{6,}" title="最少6位" placeholder="再输入一遍新密码">
+            </div>
+          </div>
+          <hr class="form-separator">
+          <div class="form-field form-buttons signup-field">
+            <div class="form-content clearfix">
+              <button type=button class="form-button cancel fl w45">
+                <span class="state-normal">取 消</span>
+              </button>
+              <button type=submit class="form-button keep fr w45">
+                <span class="state-normal">保 存</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="popup-footer">   
+      <div class="bridge"></div>
+    </footer>
+  </form>
+</script>
+<!-- 模块部分 -->
+<script type="text/template" id="modulesTpl">
+  {{each data v}}
+  <div class="module-item fl">
+    <div class="item">
+      <div class="item-top-box">
+        <a class="item-top" href="../../scene.html?guid={{v.GUID}}" target="_blank">
+          {{if v.coverImg}}
+          <img class="lazy" src="../public/images/load.jpg" data-original="{{v.coverImg}}">
+          {{else}}
+          <img src="../public/images/load.jpg">
+          {{/if}}
+        </a>
+      </div>
+      <!-- <a class="item-top" href="../../scene.html?guid={{v.GUID}}">
+        {{if v.coverImg}}
+        <img class="lazy" src="../public/images/load.jpg" data-original="{{v.coverImg}}">
+        {{else}}
+        <img src="../public/images/load.jpg">
+        {{/if}}
+      </a> -->
+      <div class="item-bottom">
+        <div class="item-info one-txt-cut">
+          <div class="item-info-t">
+            <a class="avatar-box w10" href="javascript:void(0)">
+              <div class="user-avatar">
+                {{if v.Touxiang}}
+                <!-- <div class="avatar" style="backgroundImg:url('{{v.Touxiang}}')"></div> -->
+                <img class="avatar" src="{{v.Touxiang}}">
+                {{else}}
+                <img class="avatar" src="../public/images/avatar.jpeg">
+                {{/if}}
+              </div>
+            </a>
+            <b class="one-txt-cut">{{v.title}}</b>
+          </div>
+          <div class="item-info-b">
+            <div class="address-look-box w60">
+              <svg class="address">
+                <use xlink:href="#address"></use>
+              </svg>
+              {{if v.province}}
+              <span class="b-address one-txt-cut">{{v.province}}·{{v.city}}</span>
+              {{else}}
+              <span class="b-address one-txt-cut">未知省·未知市</span>
+              {{/if}}
+              <svg class="look">
+                <use xlink:href="#look"></use>
+              </svg>
+              <span class="b-look one-txt-cut">{{v.viewTimes}}</span>
+            </div>
+            <div class="times-box w40">
+              <span class="times-ago">{{v.addTime | getDateDiff}}</span>
+            </div>
+          </div>
+        </div>
+        <div class="set" data-admin="{{v.manager}}" data-Guid="{{v.GUID}}"></div>
+        <div class="set-box">
+          <div class="set-list">
+            <button id="edit" data-admin="{{v.manager}}" data-Guid="{{v.GUID}}">编 辑</button>
+            <button id="report" data-admin="{{v.manager}}" data-Guid="{{v.GUID}}">上 报</button>
+            <button id="change" data-admin="{{v.manager}}" data-Guid="{{v.GUID}}">易 主</button>
+            <button id="load">下 载</button>
+            <button id="delete" data-admin="{{v.manager}}" data-Guid="{{v.GUID}}">删 除</button>
+          </div>
+          <span class="arrow"></span>
+        </div>
+      </div>
+    </div>
+    <div class="user-summary" data-summary="{{v.GUID}}">
+      <i class="summary-arrow">
+        <span class="arrow-shade"></span>
+      </i>
+      <a class="summary-left center-y" href="#">
+        <div class="summary-left-avatar">
+          {{if v.Touxiang}}
+          <img class="avatar-min" src="{{v.Touxiang}}">
+          {{else}}
+          <img class="avatar-min" src="../public/images/avatar.jpeg">
+          {{/if}}
+        </div>
+      </a>
+      <div class="summary-right">
+        <p class="one-txt-cut">{{v.manager}}</p> 
+        <p class="one-txt-cut">{{v.company}}</p>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</script>
+<!-- 模板引擎结束 -->
+<!-- <script src="../public/assets/jquery-3.3.1.min.js"></script>
+<script src="../public/assets/template-web.js"></script>
+<script src="../public/assets/jquery.lazyload.min.js"></script>
+<script src="../public/assets/jquery.cookie.js"></script>
+<script src="../public/assets/jquery.form.js"></script>
+<script src="../public/assets/bootstrap.min.js"></script> -->
+<script src="../public/assets/assets-user.min.js"></script>
+<script src="../public/js/bundle-user.min.js"></script>
+<!-- <script src="../public/js/load.js"></script>
+<script src="../public/js/sort.js"></script>
+<script src="../public/js/popup.js"></script>
+<script src="../public/js/login.js"></script>
+<script src="../public/js/uploadavatar.js"></script>
+<script src="../public/js/set.js"></script>
+<script src="../public/js/moduleEdit.js"></script>
+<script src="../public/js/rem.js"></script>
+<script src="../public/js/filter.js"></script>
+<script src="../public/js/admin.js"></script> -->
